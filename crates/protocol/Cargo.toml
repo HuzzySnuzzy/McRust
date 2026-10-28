@@ -1,0 +1,10 @@
+[package]
+name = "mcrust-protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Minecraft: Java Edition network protocol primitives"
+
+[dependencies]
+anyhow = "1"
+serde_json = "1"

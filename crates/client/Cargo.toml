@@ -1,0 +1,18 @@
+[package]
+name = "mcrust"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "A Minecraft: Java Edition compatible client written in Rust"
+
+[dependencies]
+mcrust-protocol = { path = "../protocol" }
+mcrust-world = { path = "../world" }
+anyhow = "1"
+bytemuck = { version = "1", features = ["derive"] }
+env_logger = "0.11"
+glam = "0.34"
+log = "0.4"
+pollster = "1"
+wgpu = "25"
+winit = "0.30"
