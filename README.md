@@ -10,7 +10,21 @@ the Java client entirely, without running the JVM.
 > world and can query real servers' status. It cannot join servers yet; see
 > the roadmap below.
 
-## Running
+## Download
+
+Every push is built by GitHub Actions for Windows, Linux and macOS.
+
+- **Latest build:** open the repository's **Actions** tab, click the newest
+  green **Build** run, and download `mcrust-windows-x64` (or your platform)
+  under *Artifacts*. You need to be signed in to GitHub. The download is a zip
+  containing `mcrust.exe`.
+- **Releases:** pushing a tag such as `v0.1.0` publishes the zips on the
+  repository's **Releases** page, where anyone can download them.
+
+Windows SmartScreen may warn about an unsigned app. Click *More info*, then
+*Run anyway*.
+
+## Building from source
 
 Requires a recent stable Rust toolchain and a GPU with Vulkan, Metal, DX12 or
 OpenGL support.
